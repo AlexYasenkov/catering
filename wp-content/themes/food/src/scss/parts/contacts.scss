@@ -1,0 +1,165 @@
+.contacts {
+    padding-top: 100px;
+
+    &-top {
+        &__title {
+            margin-bottom: 10px;
+
+            h3 {
+                font-family: "HankenGrotesk";
+                font-size: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px -10px;
+        }
+
+        &-column {
+            flex: 0 1 50%;
+            padding: 0px 10px;
+            margin-top: 25px;
+
+            @media (max-width: 641px) {
+                flex: 0 1 100%;
+            }
+        }
+
+        &-item {
+            display: inline-flex;
+            align-items: center;
+
+            &__icon {
+                color: #000;
+
+                span {
+                    font-size: 22px;
+                }
+            }
+
+            &__text {
+                color: #000;
+                flex: 1 1 auto;
+                font-size: 15px;
+                margin-left: 8px;
+            }
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+
+            &__icon {
+                color: #000;
+                display: block;
+                margin-left: 15px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:hover {
+                    color: #3f3f3f;
+                }
+
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    &-content {
+        padding-top: 50px;
+        display: flex;
+
+        @media (max-width: 721px) {
+            flex-direction: column;
+        }
+
+        &-column {
+            flex: 0 1 50%;
+
+            @media (max-width: 721px) {
+                flex: 0 1 100%;
+            }
+        }
+
+        &-map {
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 721px) {
+                height: 400px;
+            }
+
+            iframe {
+                border: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-form {
+            background-color: #000;
+            padding: 50px;
+
+            @media (max-width: 767px) {
+                padding: 30px;
+            }
+
+            &__title {
+                color: #fff;
+                font-family: "HankenGrotesk";
+                font-size: 25px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+
+            &-body {
+                max-width: 375px;
+
+                .input {
+                    background-color: #333;
+                    border: 2px solid #999;
+                    color: #959595;
+                    font-size: 15px;
+                    display: block;
+                    padding: 0px 18px;
+                    width: 100%;
+                    height: 50px;
+                }
+
+                textarea.input {
+                    resize: none;
+                    height: 100px;
+                    padding: 10px 18px;
+                }
+            }
+
+            &-line {
+                margin-bottom: 25px;
+            }
+
+            &-button {
+                .btn {
+                    cursor: pointer;
+                }
+            }
+
+            .wpcf7-spinner {
+                background-color: #959898;
+            }
+
+            .wpcf7-response-output {
+                color: #ffffdd;
+            }
+        }
+    }
+}

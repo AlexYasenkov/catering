@@ -21,6 +21,19 @@ body {
 
 .page {
     flex: 1 1 auto;
+    position: relative;
+
+    &-404 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        &__title {
+            font-size: calc(24px + 10 * (100vw / 1200));
+        }
+    }
 }
 
 .container {
